@@ -1,15 +1,24 @@
-h1{
-    color: #000;
+/* ----- Box model RESET ----- */
+html{
+    box-sizing: border-box;
 }
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/* ----- Box model RESET ----- */
 
-h1 span {
+.nombre-sitio span{
     color: #037bc0;
 }
 
-footer a {
-    text-transform: uppercase;
+.sobre-nosotros{
+    background-color: red;
+    width: 200px;
+    padding: 25px;
 }
 
-a {
-    text-transform: lowercase;
+.sobre-empresa{
+    background-color: blue;
+    width: 500px;
+    padding: 100px;
 }
