@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <title>Tienda Muebles - Home</title>
 </head>
@@ -17,37 +20,45 @@
 
     </header>
 
-    <nav class="nav-principal">
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
 
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
-
-    </nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+    
+        </nav>
+    </div>
 
     <!-- Header termina aquí -->
     <!-- Content inicia aquí -->
 
-    <section>
+    <div class="hero"></div>
+
+    <section class="contenedor categorias">
 
         <h2>Categorías de <span>Producto</span></h2>
 
-        <div>
-            <img src="img/categoria1.jpg" alt="Imagen Categoría">
-            <a href="#">Oficina</a>
-        </div>
+        <div class="listado-categorias">
 
-        <div>
-            <img src="img/categoria2.jpg" alt="Imagen Categoría">
-            <a href="#">Hogar</a>
-        </div>
+            <div class="categoria">
+                <img src="img/categoria1.jpg" alt="Imagen Categoría">
+                <a href="#">Oficina</a>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/categoria2.jpg" alt="Imagen Categoría">
+                <a href="#">Hogar</a>
+            </div>
+    
+            <div class="categoria">
+                <img src="img/categoria3.jpg" alt="Imagen Categoría">
+                <a href="#">Cocina</a>
+            </div>
 
-        <div>
-            <img src="img/categoria3.jpg" alt="Imagen Categoría">
-            <a href="#">Cocina</a>
         </div>
 
     </section>

@@ -10,10 +10,23 @@ html{
 
 /* ----- Estilos GLOBALES ----- */
 
+body{
+    font-family: "Raleway", sans-serif;
+}
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+}
 a{
     text-decoration: none;
     color: black;
 }
+img{
+    max-width: 100%;    /* fix para imágenes */
+    display: block;     /* fix para imágenes */
+}
+
+
+/* ----- Estilos GLOBALES ----- */
 
 .nombre-sitio{
     margin-top: 50px;
@@ -24,19 +37,46 @@ a{
     color: #037bc0;
 }
 
-.nav-principal{
+.contenedor-navegacion{
     border-top: 1px solid #e1e1e1;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
-.sobre-nosotros{
-    background-color: red;
-    width: 200px;
-    padding: 25px;
+.hero{
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 550px;
 }
 
-.sobre-empresa{
-    background-color: blue;
-    width: 500px;
-    padding: 100px;
+/* ----- Categorias -----*/
+
+.categorias h2{
+    text-align: center;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+    .categoria a:hover{
+        background-color: #037bc0;
+        color: #fff;
+        /* border-bottom-right-radius: 10px; */
+        border-radius: 0 0 10px 10px;
+    }
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
