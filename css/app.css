@@ -236,13 +236,21 @@ img{
     flex: 1;
 }
 */
-
+.site-footer h3 {
+    margin-bottom: .5rem;
+}
 .grid-footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.site-footer a{
+.footer-menu a{
+    display: block;
     color: #037bc0;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 5rem;
 }
