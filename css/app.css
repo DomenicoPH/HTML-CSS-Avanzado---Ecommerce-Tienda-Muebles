@@ -219,3 +219,30 @@ img{
     font-size: 2.8rem;
     font-weight: 900;
 }
+
+/* ----- Footer ----- */
+
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+/* Flex 
+.grid-footer{
+    display: flex;
+    gap: 2rem;
+}
+.grid-footer div{
+    flex: 1;
+}
+*/
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.site-footer a{
+    color: #037bc0;
+}
