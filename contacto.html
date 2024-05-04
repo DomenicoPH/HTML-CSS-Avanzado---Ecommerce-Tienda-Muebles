@@ -34,6 +34,76 @@
 
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
+
+        <form>
+            <fieldset> <!-- Fieldset 1 -->
+                <legend>Datos Personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombre" type="text" placeholder="tu nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto: </label>
+                    <input id="asunto" type="text" placeholder="asunto">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="tu email">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Teléfono: </label>
+                    <input id="tel" type="tel" placeholder="tu teléfono">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" rows="10" cols="20"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset> <!-- Fieldset 2 -->
+                <legend>País</legend>
+
+                <div class="campo">
+                    <label for="pais">País: </label>
+                    <select id="pais">
+                        <option value="" selected disabled>--Seleccione--</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="HN">Honduras</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                
+            </fieldset>
+
+            <fieldset> <!-- Fieldset 3 -->
+                <legend>Información Extra</legend>
+
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+                
+            </fieldset>
+        </form>
     </main>
 
     <!-- Content termina aquí -->
