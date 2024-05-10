@@ -412,10 +412,6 @@ img{
 .entrada:last-of-type{
     border: none;
 }
-.contenido-entrada-blog{
-    width: 60rem;
-    margin: 0 auto;
-}
 @media (min-width: 768px){ 
     .entrada-meta{
         display: flex;
@@ -427,6 +423,10 @@ img{
 }
 .entrada-meta span{
     color: #037bc0;
+}
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
 }
 
 .sidebar{
