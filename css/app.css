@@ -336,11 +336,12 @@ img{
 }
 
 /* Centrado personalizado del footer : Not on tutorial */
-/* .grid-footer div{
+.grid-footer div{
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
+/* Centrado personalizado del footer : Not on tutorial */
 
 .footer-menu a{
     display: block;
