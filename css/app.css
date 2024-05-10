@@ -167,24 +167,42 @@ img{
 
 .sobre-nosotros{
     /* background-image: linear-gradient( to left, black 50%, red 50%, red 100%); */
-    background: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url('../img/nosotros.jpg');
+    background: linear-gradient(to bottom, transparent 50%, #037bc0 50%, #037bc0 100%), url('../img/nosotros.jpg');
     background-repeat: no-repeat;
-    background-position: left center;
-    padding: 10rem 0;
-    background-size: 100%, 160rem;
+    background-position: center, top left;
+    background-size: 100%, 80rem;
+}
+@media (min-width: 768px){ 
+    .sobre-nosotros{
+        /* background-image: linear-gradient( to left, black 50%, red 50%, red 100%); */
+        background: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url('../img/nosotros.jpg');
+        background-position: left center;
+        padding: 10rem 0;
+        background-size: 100%, 160rem;
+    }
 }
 
 /* Grid */
 .sobre-nosotros-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: unset;
+    grid-template-rows: repeat(2, 1fr);
     column-gap:  10rem;
 }
+@media (min-width: 768px){ 
+    .sobre-nosotros-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+    }
+}
 .texto-nosotros{
-    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     color: #fff;
     padding: 5rem;
+}
+@media (min-width: 768px){ 
+    .texto-nosotros{
+        grid-column: 2 / 3;
+    }
 }
 
 /* Flex */
